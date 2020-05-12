@@ -88,12 +88,7 @@
 			<artifactId>xmlworker</artifactId>
 			<version>5.5.0</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
-		<dependency>
-			<groupId>org.apache.pdfbox</groupId>
-			<artifactId>pdfbox</artifactId>
-			<version>2.0.0</version>
-		</dependency>
+		
 
 		<!-- <dependency> <groupId>com.Oracle.FrameWork</groupId> <artifactId>FrameWork</artifactId> 
 			<version>1.1.0</version> <scope>compile</scope> </dependency> -->
