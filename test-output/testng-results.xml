@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50" started-at="2020-05-07T17:49:16 IST" finished-at="2020-05-07T17:49:16 IST">
+  <suite name="Default suite" duration-ms="32" started-at="2020-05-12T05:27:37Z" finished-at="2020-05-12T05:27:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50" started-at="2020-05-07T17:49:16 IST" finished-at="2020-05-07T17:49:16 IST">
+    <test name="Default test" duration-ms="32" started-at="2020-05-12T05:27:37Z" finished-at="2020-05-12T05:27:37Z">
       <class name="runner.TestRunner">
-        <test-method status="PASS" signature="forTesting()[pri:0, instance:runner.TestRunner@2b2948e2]" name="forTesting" duration-ms="8" started-at="2020-05-07T17:49:16 IST" finished-at="2020-05-07T17:49:16 IST">
+        <test-method status="PASS" signature="forTesting()[pri:0, instance:runner.TestRunner@23f7d05d]" name="forTesting" duration-ms="10" started-at="2020-05-12T05:27:37Z" finished-at="2020-05-12T05:27:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forTesting -->
