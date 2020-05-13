@@ -88,7 +88,7 @@
 			<artifactId>xmlworker</artifactId>
 			<version>5.5.0</version>
 		</dependency>
-		
+
 
 		<!-- <dependency> <groupId>com.Oracle.FrameWork</groupId> <artifactId>FrameWork</artifactId> 
 			<version>1.1.0</version> <scope>compile</scope> </dependency> -->
@@ -178,35 +178,84 @@
 			<artifactId>guava</artifactId>
 			<version>22.0</version>
 		</dependency>
-		
+
 		<!-- https://mvnrepository.com/artifact/com.sun.xml.stream/sjsxp -->
-			<dependency>
-			    <groupId>com.sun.xml.stream</groupId>
-			    <artifactId>sjsxp</artifactId>
-			    <version>1.0.2</version>
-			</dependency>
+		<dependency>
+			<groupId>com.sun.xml.stream</groupId>
+			<artifactId>sjsxp</artifactId>
+			<version>1.0.2</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
-			<dependency>
-			    <groupId>commons-io</groupId>
-			    <artifactId>commons-io</artifactId>
-			    <version>2.4</version>
-			</dependency>	
-			
-				<dependency>
-					<groupId>com.sikulix</groupId>
-					<artifactId>sikulixapi</artifactId>
-					<version>1.1.0</version>
-				</dependency>
-		
-				<dependency>
-					<groupId>junit</groupId>
-					<artifactId>junit</artifactId>
-					<version>4.11</version>
-				</dependency>
-		
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sikulix</groupId>
+			<artifactId>sikulixapi</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/com.qmetry/qaf -->
+<!-- 
+		<dependency>
+			<groupId>com.qmetry</groupId>
+			<artifactId>qaf</artifactId>
+			<version>2.1.15</version>
+			<scope>provided</scope>
+		</dependency>
+ -->
+
 	</dependencies>
+
+<!-- 
+	<pluginRepositories>
+		<pluginRepository>
+			<id>qmetry-test-management-maven-plugin-mvn-repo</id>
+			<url>https://raw.github.com/qmetry/qmetry-test-management-maven-plugin/mvn-repo/</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+ -->
+
 	<build>
 		<plugins>
+
+<!-- 
+			<plugin>
+				<groupId>com.qmetry</groupId>
+				<artifactId>qmetry-test-management-maven-plugin</artifactId>
+				<configuration>
+					<url>https://testmanagement.qmetry.com/</url>
+					<apikey>BVlgGbzLvUMOc4fM7WOKEeZCdDiGl0YQm6PjkNmz</apikey>
+					<filepath>target/surefire-reports/testng-results.xml</filepath>
+					<format>testng.xml</format>
+					<project>
+						Hotel OPERA CL
+					</project>
+					<testsuite></testsuite>
+					<testsuiteName>New Auto Test suite</testsuiteName>
+					<release>Default Release</release>
+					<cycle>Default Cycle</cycle>
+					<build></build>
+					<platform>Chrome</platform>
+				</configuration>
+			</plugin>
+ -->
+
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -226,16 +275,16 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-            <plugin>
-                 <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.19.1</version>
-        <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-            </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
 
 		</plugins>
 	</build>
